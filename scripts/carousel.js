@@ -62,14 +62,14 @@ const postsCard = (url, title, username) => {
   `;
 };
 
-const AMACard = (url, name, career) => {
+const AMACard = (url, name, career, icon) => {
   return `
     <div class="carousel-item">
         <div class="col-12 col-lg-4 col-sm-6 p-3">
             <div class="card">
                 <img
                     class="card-img-top custom-img"
-                    src=${url}
+                    src=${icon}
                     alt="Card image cap"
                 />
                 <div class="card-body">
@@ -77,7 +77,7 @@ const AMACard = (url, name, career) => {
                     <p class="card-text">
                         ${career}
                     </p>
-                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    <a href="${url}" class="btn btn-primary">Visit</a>
                 </div>
             </div>
         </div>
